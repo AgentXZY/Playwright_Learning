@@ -12,9 +12,9 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class LaunchBrowser {
+public class AmazonLogin {
 
-	public static void main(String[] args) {
+	public void login() {
 		
 		Properties config = new Properties();
 		try {
@@ -29,6 +29,7 @@ public class LaunchBrowser {
 		Browser browser = playwright.chromium().launch(
 				new LaunchOptions().setHeadless(false)
 				.setChannel("msedge")
+				.setSlowMo(100) //FOR SLOW MOTION TYPING
 //				.setExecutablePath(Paths.get("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"))
 				);
 		Page page = browser.newPage();
