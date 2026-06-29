@@ -1,11 +1,9 @@
 package day2;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 import com.microsoft.playwright.Locator;
